@@ -1,5 +1,4 @@
-# Part 1
-# Create variables:
+# Task 1 Create variables:
 # a = 2 (int)
 # b = 5.3 (float)
 # c = '5' (str)
@@ -22,8 +21,7 @@ print('Addition: ', a+b, 'Subtraction: ', a-b, 'Multiplication: ', a*b, 'Divisio
 # What is the result type in each operation? Float
 
 
-# Part 2
-# Convert:
+# Task 2 Convert:
 # c (string '5') to a number
 # a to float
 #
@@ -39,8 +37,7 @@ print(Add)
 # What happens if you do a + c without conversion? There will be a "TypeError"
 
 
-# Part 3
-# Given:
+# Task 3 Given:
 # x = 10
 # y = 3
 #
