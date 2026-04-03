@@ -2,8 +2,8 @@
 
 students = ['Bohdan', 'Anton', 'Dima', 'Victoria']
 
-for i in students:
-    print(f'Student: {i} is here!')
+for st in students:
+    print(f'Student: {st} is here!')
 
 print('Done')
 
