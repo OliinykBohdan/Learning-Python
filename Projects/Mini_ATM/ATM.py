@@ -13,7 +13,7 @@ while attempt_pin < 3:
         attempt_pin = attempt_pin + 1
 
 if attempt_pin == 3:
-    print('Access denied ')
+    print('Access denied')
     sys.exit()
 
 
