@@ -19,7 +19,7 @@ if attempt_pin == 3:
     sys.exit()
 
 
-balance = 1000
+balance = 1000.0
 
 # Main ATM menu loop
 while True:
@@ -28,17 +28,22 @@ while True:
     if choice == '1':
         print('Your balance: ' + str(balance))
     elif choice == '2':
-        am_depos = int(input('Enter the amount to deposit: '))
-        balance += am_depos
-        print('Deposit successful. Your new balance is: ' + str(balance))
+        am_depos = float(input('Enter the amount to deposit: '))
+        if am_depos <= 0:
+            print('Amount must be positive.')
+        else:
+            balance += am_depos
+            print('Deposit successful. Your new balance is: ' + str(balance))
     elif choice == '3':
-        withdraw = int(input('Enter the withdrawal amount: '))
+        withdraw = float(input('Enter the withdrawal amount: '))
+        if withdraw <= 0:
+            print('Amount must be positive.')
         # Prevent overdraft
-        if balance < withdraw:
+        elif balance < withdraw:
             print('Transaction failed: not enough balance.')
-            continue
-        balance -= withdraw
-        print('Withdrawal successful. Your remaining balance is: ' + str(balance))
+        else:
+            balance -= withdraw
+            print('Withdrawal successful. Your remaining balance is: ' + str(balance))
     elif choice == '4':
         print ('=== Thank you. Goodbye. ===')
         break
