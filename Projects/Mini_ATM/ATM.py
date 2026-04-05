@@ -3,15 +3,17 @@ import sys
 
 print('===== Welcome to the ATM =====')
 
+# PIN authentication (max 3 attempts)
 while attempt_pin < 3:
     pin = input('Please enter a pin: ')
-    if pin == '1234':
+    if pin == '1122':
         print('Access granted')
         break
     else:
         print('Pin not recognised')
-        attempt_pin = attempt_pin + 1
+        attempt_pin += 1
 
+# Exit if authentication failed
 if attempt_pin == 3:
     print('Access denied')
     sys.exit()
@@ -19,6 +21,7 @@ if attempt_pin == 3:
 
 balance = 1000
 
+# Main ATM menu loop
 while True:
     print('\nChoose an option:\n1 - Check balance\n2 - Deposit\n3 - Withdraw\n4 - Exit')
     choice = input('Enter your choice: ')
@@ -30,6 +33,7 @@ while True:
         print('Deposit successful. Your new balance is: ' + str(balance))
     elif choice == '3':
         withdraw = int(input('Enter the withdrawal amount: '))
+        # Prevent overdraft
         if balance < withdraw:
             print('Transaction failed: not enough balance.')
             continue
@@ -39,4 +43,4 @@ while True:
         print ('=== Thank you. Goodbye. ===')
         break
     else:
-        print('Please enter a valid option')
+        print('Please enter a valid option.')
