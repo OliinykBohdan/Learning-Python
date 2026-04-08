@@ -1,0 +1,190 @@
+# Task 1: Access Values
+#
+# Here is a dictionary:
+#
+# user = {
+#     'name': 'Alex',
+#     'age': 25,
+#     'city': 'Kyiv'
+# }
+#
+# Print:
+#
+# name
+# city
+from operator import add
+
+print('\nTask 1:')
+
+user = {
+    'name': 'Alex',
+    'age': 25,
+    'city': 'Kyiv',
+}
+
+print('name:', user['name'] )
+print('city:', user['city'])
+
+# Task 2: Add New Key
+#
+# Here is a dictionary:
+#
+# user = {
+#     'name': 'Alex',
+#     'age': 25
+# }
+#
+# Add a key:
+#
+# 'city': 'Kyiv'
+#
+# Print the dictionary
+
+print('\nTask 2:')
+
+user = {
+    'name': 'Alex',
+    'age': 25,
+}
+
+user['city'] = 'Kyiv'
+
+print(user)
+
+# Task 3: Update Value
+#
+# Here is a dictionary:
+#
+# user = {
+#     'name': 'Alex',
+#     'age': 25
+# }
+#
+# Change the age to 26
+
+print('\nTask 3:')
+
+user = {
+    'name': 'Alex',
+    'age': 25,
+}
+
+user['age'] = 26
+
+print(user)
+
+# Task 4: Loop Through Dict
+#
+# Here is a dictionary:
+#
+# user = {
+#     'name': 'Alex',
+#     'age': 25,
+#     'city': 'Kyiv'
+# }
+#
+# Print all keys and values in the format:
+#
+# name: Alex
+# age: 25
+# city: Kyiv
+
+print('\nTask 4:')
+
+user = {
+    'name': 'Alex',
+    'age': 25,
+    'city': 'Kyiv',
+}
+
+for key, value in user.items():
+    print(f'{key}: {value}')
+
+# Task 5: Check Key
+#
+# Here is a dictionary:
+#
+# user = {
+#     'name': 'Alex',
+#     'age': 25
+# }
+#
+# Check:
+#
+# if 'city' exists → print the value
+# if not → 'Key not found'
+
+print('\nTask 5:')
+
+user = {
+    'name': 'Alex',
+    'age': 25,
+}
+
+city = user.get('city', 'Key not found')
+
+print(city)
+
+# Task 6: Count Characters
+#
+# Here is a string:
+#
+# text = 'hello'
+#
+# Count how many times each character appears
+# Use a dict
+#
+# Expected result:
+#
+# {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+
+print('\nTask 6:')
+
+text = 'hello'
+text_dict = {}
+
+for char in text:
+    if char in text_dict:
+        text_dict[char] += 1
+    else:
+        text_dict[char] = 1
+
+print(text_dict)
+
+# Task 7 (challenge): Find Max Value
+#
+# Here is a dictionary:
+#
+# scores = {
+#     'Alex': 50,
+#     'John': 75,
+#     'Mike': 60
+# }
+#
+# Find:
+#
+# who has the highest score
+#
+# Print:
+#
+# John: 75
+#
+# without using max()
+
+print('\nTask 7:')
+
+scores = {
+    'Alex': 50,
+    'John': 75,
+    'Mike': 60
+}
+
+max_name = None
+max_score = None
+
+for key, value in scores.items():
+    if max_score is None or value > max_score:
+        max_name = key
+        max_score = value
+
+print(f'{max_name}: {max_score}')
