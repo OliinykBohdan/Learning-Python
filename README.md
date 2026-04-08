@@ -37,4 +37,4 @@ Some parts of this repository may look simple — that's intentional. It reflect
 - Preparing for backend frameworks
 
 ## Projects
-- In progress
+- Mini_ATM
