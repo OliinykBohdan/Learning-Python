@@ -18,12 +18,19 @@ if attempt_pin == 3:
     print('Access denied')
     sys.exit()
 
-
 balance = 1000.0
+
+menu = '''
+Choose an option:
+1 - Check balance
+2 - Deposit
+3 - Withdraw
+4 - Exit
+'''
 
 # Main ATM menu loop
 while True:
-    print('\nChoose an option:\n1 - Check balance\n2 - Deposit\n3 - Withdraw\n4 - Exit')
+    print(menu)
     choice = input('Enter your choice: ')
     if choice == '1':
         print('Your balance: ' + str(balance))
