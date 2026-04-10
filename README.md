@@ -38,3 +38,4 @@ Some parts of this repository may look simple — that's intentional. It reflect
 
 ## Projects
 - Mini_ATM
+- Shopping_Cart
