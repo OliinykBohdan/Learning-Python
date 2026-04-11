@@ -35,22 +35,45 @@ while True:
     if choice == '1':
         print('Your balance: ' + str(balance))
     elif choice == '2':
-        am_depos = float(input('Enter the amount to deposit: '))
-        if am_depos <= 0:
-            print('Amount must be positive.')
-        else:
-            balance += am_depos
-            print('Deposit successful. Your new balance is: ' + str(balance))
+        while True:
+            am_depos = input('Enter the amount to deposit or exit: ')
+            if am_depos == 'exit':
+                break
+            # Prevent ValueError
+            try:
+                amount = float(am_depos)
+
+                if amount <= 0:
+                    print('\nAmount must be positive.')
+                else:
+                    balance += amount
+                    print(f'\nDeposit successful. Your new balance is: {balance}')
+
+            except ValueError:
+                print('\nPlease enter a valid number or type "exit".')
+
     elif choice == '3':
-        withdraw = float(input('Enter the withdrawal amount: '))
-        if withdraw <= 0:
-            print('Amount must be positive.')
-        # Prevent overdraft
-        elif balance < withdraw:
-            print('Transaction failed: not enough balance.')
-        else:
-            balance -= withdraw
-            print('Withdrawal successful. Your remaining balance is: ' + str(balance))
+        while True:
+            withdraw = input('Enter the withdrawal amount or exit: ')
+            if withdraw == 'exit':
+                break
+
+            try:
+                amount = float(withdraw)
+
+                if amount <= 0:
+                    print('\nAmount must be positive.')
+                # Prevent overdraft
+                elif balance < float(withdraw):
+                    print('\nTransaction failed: not enough balance.')
+
+                else:
+                    balance -= float(withdraw)
+                    print(f'\nWithdrawal successful. Your remaining balance is: {balance}')
+
+            except ValueError:
+                print('\nPlease enter a valid number or type "exit".')
+
     elif choice == '4':
         print ('=== Thank you. Goodbye. ===')
         break
