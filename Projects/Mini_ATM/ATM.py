@@ -11,7 +11,6 @@ while attempt_pin < 3:
     if pin == '1122':
         print('Access granted')
         break
-
     else:
         print('Pin not recognised')
         attempt_pin += 1
@@ -42,6 +41,7 @@ while True:
     elif choice == '2':
         while True:
             am_depos = input('Enter the amount to deposit or exit: ')
+
             if am_depos == 'exit':
                 break
 
@@ -61,6 +61,7 @@ while True:
     elif choice == '3':
         while True:
             withdraw = input('Enter the withdrawal amount or exit: ')
+
             if withdraw == 'exit':
                 break
 
@@ -69,11 +70,9 @@ while True:
 
                 if amount <= 0:
                     print('\nAmount must be positive.')
-
                 # Prevent overdraft
                 elif balance < float(withdraw):
                     print('\nTransaction failed: not enough balance.')
-
                 else:
                     balance -= float(withdraw)
                     print(f'\nWithdrawal successful. Your remaining balance is: {balance}')
