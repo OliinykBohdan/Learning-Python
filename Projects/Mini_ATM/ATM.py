@@ -1,14 +1,17 @@
-attempt_pin = 0
 import sys
+
+attempt_pin = 0
 
 print('===== Welcome to the ATM =====')
 
 # PIN authentication (max 3 attempts)
 while attempt_pin < 3:
     pin = input('Please enter a pin: ')
+
     if pin == '1122':
         print('Access granted')
         break
+
     else:
         print('Pin not recognised')
         attempt_pin += 1
@@ -32,8 +35,10 @@ Choose an option:
 while True:
     print(menu)
     choice = input('Enter your choice: ')
+
     if choice == '1':
-        print('Your balance: ' + str(balance))
+        print(f'Your balance: {balance}')
+
     elif choice == '2':
         while True:
             am_depos = input('Enter the amount to deposit or exit: ')
@@ -77,5 +82,6 @@ while True:
     elif choice == '4':
         print ('=== Thank you. Goodbye. ===')
         break
+
     else:
         print('Please enter a valid option.')
