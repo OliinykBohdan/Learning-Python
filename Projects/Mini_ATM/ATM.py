@@ -44,6 +44,7 @@ while True:
             am_depos = input('Enter the amount to deposit or exit: ')
             if am_depos == 'exit':
                 break
+
             # Prevent ValueError
             try:
                 amount = float(am_depos)
@@ -68,6 +69,7 @@ while True:
 
                 if amount <= 0:
                     print('\nAmount must be positive.')
+
                 # Prevent overdraft
                 elif balance < float(withdraw):
                     print('\nTransaction failed: not enough balance.')
