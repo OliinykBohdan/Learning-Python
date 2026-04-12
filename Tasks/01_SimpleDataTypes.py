@@ -15,6 +15,7 @@
 a = 2
 b = 5.3
 c = '5'
+
 print('Integer: ', type(a), 'Float: ', type(b), 'String: ', type(c), sep='\n')
 print('Addition: ', a+b, 'Subtraction: ', a-b, 'Multiplication: ', a*b, 'Division: ', a/b, sep='\n')
 
@@ -32,6 +33,7 @@ print('Addition: ', a+b, 'Subtraction: ', a-b, 'Multiplication: ', a*b, 'Divisio
 # What happens if you do a + c without conversion?
 
 Add = float(a) + int(c)
+
 print(Add)
 
 # What happens if you do a + c without conversion? There will be a "TypeError"
@@ -53,6 +55,7 @@ print(Add)
 
 x = 10
 y = 3
+
 print('Division: ', x / y, 'Division to an integer: ', x // y, 'Remainder from division: ', x % y, '', 'Power: ', x ** y, sep='\n')
 
 # Explanation of the difference between:
