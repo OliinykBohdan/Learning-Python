@@ -57,7 +57,7 @@ while True:
 
     elif choice == '2':
         if cart == {}:
-            print('The cart is empty')
+            print('The cart is empty.')
         else:
             print('~~~ Items in your cart ~~~')
             for product, weight in cart.items():
@@ -66,7 +66,7 @@ while True:
     elif choice == '3':
         while True:
             if cart == {}:
-                print('The cart is empty')
+                print('The cart is empty.')
                 break
             else:
                 print('~~~ Items in your cart ~~~')
@@ -83,6 +83,7 @@ while True:
                     remove_product = input('Please enter what you want to remove or exit: ')
                     if remove_product == 'exit':
                         break
+
                     elif remove_product not in cart:
                         print('Sorry, this item is not in your cart.\n')
                         continue
@@ -112,7 +113,7 @@ while True:
 
     elif choice == '4':
         if cart == {}:
-            print('The cart is empty')
+            print('The cart is empty.')
         else:
             total_price = 0
             for product, weight in cart.items():
@@ -124,4 +125,4 @@ while True:
         break
 
     else:
-        print('Please enter a valid choice')
+        print('Please enter a valid choice.')
