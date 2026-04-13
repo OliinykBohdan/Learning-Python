@@ -24,54 +24,44 @@ while True:
     choice = input('Enter your choice: ')
 
     if choice == '1':
-     while True:
-        print('\n~~~ Items in stock ~~~')
-        for key, value in price.items():
-            print(f'{key}: {value}' ' $')
-        choice_product = input('Select an item or return to the previous menu (press 1): ')
-        choice_price = price.get(choice_product)
-        if choice_price == price['orange']:
-            choice_quantity = input('Enter the weight of the item in kilograms: ')
-            if float(choice_quantity) <= 0:
-                print('Please enter a positive number')
-            elif float(choice_quantity) > store['orange']:
-                print ('Sorry, we do not have that many items in stock')
+        while True:
+            print('\n~~~ Items in stock (the price is per 1 kg) ~~~')
+            for product in store:
+                print(f'{product}: {price[product]} $ | {store[product]} kg available')
+
+            choice_product = input('Select an item or exit: ')
+
+            if choice_product == 'exit':
+                break
+            elif choice_product not in store:
+                print('This item is not available.')
+                continue
+
+            try:
+                quantity = float(input('Enter the quantity in kg: '))
+
+            except ValueError:
+                print('Please enter a numeric value.')
+                continue
+
+            if quantity <= 0:
+                print('Please enter a positive number.')
+                continue
+
+            elif quantity > store[choice_product]:
+                print('Sorry, we do not have that many items in stock.')
             else:
-                cart[choice_product] = float(choice_quantity)
-                store['orange'] -= float(choice_quantity)
-                print('Thank you, the item has been added to your cart')
-        elif choice_price == price['potato']:
-            choice_quantity = input('Enter the weight of the item in kilograms: ')
-            if float(choice_quantity) <= 0:
-                print('Please enter a positive number')
-            elif float(choice_quantity) > store['potato']:
-                print('Sorry, we do not have that many items in stock')
-            else:
-                cart[choice_product] = float(choice_quantity)
-                store['potato'] -= float(choice_quantity)
-                print('Thank you, the item has been added to your cart')
-        elif choice_price == price['apple']:
-            choice_quantity = input('Enter the weight of the item in kilograms: ')
-            if float(choice_quantity) <= 0:
-                print('Please enter a positive number')
-            elif float(choice_quantity) > store['apple']:
-                print('Sorry, we do not have that many items in stock')
-            else:
-                cart[choice_product] = float(choice_quantity)
-                store['apple'] -= float(choice_quantity)
-                print('Thank you, the item has been added to your cart')
-        elif choice_product == '1':
-            break
-        else:
-            print('Please enter a valid choice')
+                cart[choice_product] = cart.get(choice_product, 0) + quantity
+                store[choice_product] -= quantity
+                print('Thank you, the item has been added to your cart.')
 
     elif choice == '2':
         if cart == {}:
             print('The cart is empty')
         else:
             print('~~~ Items in your cart ~~~')
-            for key, value in cart.items():
-                print(f'{key}: {value}' ' kg')
+            for product, weight in cart.items():
+                print(f'{product}: {weight} kg')
 
     elif choice == '3':
         while True:
@@ -81,26 +71,53 @@ while True:
             else:
                 print('~~~ Items in your cart ~~~')
                 for key, value in cart.items():
-                    print(f'{key}: {value}' ' kg')
-                Remove_prod = input('Do you want to remove these items? (y/n): ')
-                if Remove_prod == 'y':
+                    print(f'{key}: {value} kg')
+                all_remove = input('Do you want to delete all these items? (y/n): ')
+
+                if all_remove == 'y':
                     cart = {}
-                    print('These items have been removed from your cart')
+                    print('All items have been removed from your cart.\n')
                     break
-                elif Remove_prod == 'n':
-                    break
+
+                elif all_remove == 'n':
+                    remove_product = input('Please enter what you want to remove or exit: ')
+                    if remove_product == 'exit':
+                        break
+                    elif remove_product not in cart:
+                        print('Sorry, this item is not in your cart.\n')
+                        continue
+
+                    try:
+                        remove_weight = float(input('Enter the weight in kg: '))
+
+                    except ValueError:
+                        print('Please enter a numeric value.\n')
+                        continue
+
+                    if remove_weight <= 0:
+                        print('Please enter a positive number.\n')
+                        continue
+
+                    elif remove_weight >= cart[remove_product]:
+                        store[remove_product] += cart[remove_product]
+                        del cart[remove_product]
+                        print('The selected item has been removed.\n')
+                    else:
+                        cart[remove_product] -= remove_weight
+                        store[remove_product] += remove_weight
+                        print('The weight of the selected item has been reduced.\n')
+
                 else:
-                    print('Please enter a valid choice\n')
+                    print('Please enter a valid choice.\n')
 
     elif choice == '4':
         if cart == {}:
             print('The cart is empty')
         else:
-            orange_price = price.get('orange') * cart.get('orange', 0)
-            potato_price = price.get('potato') * cart.get('potato', 0)
-            apple_price = price.get('apple') * cart.get('apple', 0)
-            total_price = orange_price + potato_price + apple_price
-            print(f'The total price is {total_price} $')
+            total_price = 0
+            for product, weight in cart.items():
+                total_price += weight * price[product]
+            print(f'\nTotal price: {total_price} $')
 
     elif choice == '5':
         print('=== Thank you. Goodbye. ===')
