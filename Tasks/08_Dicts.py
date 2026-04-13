@@ -188,3 +188,85 @@ for key, value in scores.items():
         max_score = value
 
 print(f'{max_name}: {max_score}')
+
+# Task 8: Add with Accumulation
+# Description:
+#
+# You have a cart:
+#
+# cart = {}
+#
+# The user enters:
+#
+# a product
+# a quantity
+#
+# The program should:
+#
+# if the product is new → add it
+# if the product already exists → add the quantity to the existing one
+
+print('\nTask 8:')
+
+cart = {}
+while True:
+    product = input('Enter product name or exit: ')
+    if product == 'exit':
+        break
+
+    try:
+        quantity = int(input('Enter quantity: '))
+
+    except ValueError:
+        print('Please enter a numeric value.')
+        continue
+
+    cart[product] = cart.get(product, 0) + quantity
+    print(cart)
+
+# Task 9: Remove Partially
+# Description:
+#
+# You have:
+#
+# cart = {
+#     'apple': 5,
+#     'banana': 3
+# }
+#
+# The user enters:
+#
+# a product
+# a quantity to remove
+
+print('\nTask 9:')
+
+cart = {
+    'apple': 5,
+    'banana': 3
+}
+
+while True:
+    product = input('Enter product name or exit: ')
+    if product == 'exit':
+        break
+    elif product not in cart:
+        print('Product not found')
+        continue
+
+    try:
+        quantity = int(input('Enter removal quantity: '))
+
+    except ValueError:
+        print('Please enter a numeric value.')
+        continue
+
+    if quantity <= 0:
+        print('Please enter a positive number.')
+        continue
+    elif quantity >= cart[product]:
+            del cart[product]
+    elif quantity < cart[product]:
+            cart[product] -= quantity
+
+    print(cart)
