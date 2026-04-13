@@ -22,6 +22,7 @@ menu = '''
 while True:
     print(menu)
     choice = input('Enter your choice: ')
+
     if choice == '1':
      while True:
         print('\n~~~ Items in stock ~~~')
@@ -63,6 +64,7 @@ while True:
             break
         else:
             print('Please enter a valid choice')
+
     elif choice == '2':
         if cart == {}:
             print('The cart is empty')
@@ -70,6 +72,7 @@ while True:
             print('~~~ Items in your cart ~~~')
             for key, value in cart.items():
                 print(f'{key}: {value}' ' kg')
+
     elif choice == '3':
         while True:
             if cart == {}:
@@ -88,6 +91,7 @@ while True:
                     break
                 else:
                     print('Please enter a valid choice\n')
+
     elif choice == '4':
         if cart == {}:
             print('The cart is empty')
@@ -97,8 +101,10 @@ while True:
             apple_price = price.get('apple') * cart.get('apple', 0)
             total_price = orange_price + potato_price + apple_price
             print(f'The total price is {total_price} $')
+
     elif choice == '5':
         print('=== Thank you. Goodbye. ===')
         break
+
     else:
         print('Please enter a valid choice')
