@@ -2,7 +2,7 @@
 
 def calculate_p(x, y):
     print('-' * 10)
-    print(f'Perimeter; {2 * (x + y)}')
+    print(f'Perimeter: {2 * (x + y)}')
     print(f'Area: {x * y}')
 
 calculate_p(10, 5)
