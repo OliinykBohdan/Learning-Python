@@ -147,3 +147,78 @@ def passwords ():
             return 'Access denied'
 
 print(passwords())
+
+# Task 7: Count Elements (Function + Dict)
+# Description:
+#
+# Create a function that:
+#
+# takes a list
+# returns a dictionary where:
+# key → element
+# value → how many times it appears
+
+print('-' * 10, 'Task 7:', sep='\n')
+
+numbers = [1, 2, 2, 3, 1]
+
+def count_elements(number):
+    result = {}
+    for x in number:
+        result[x] = result.get(x, 0) + 1
+    return result
+
+print(count_elements (numbers))
+
+# Task 8: Filter Greater Than (Function + List)
+# Description:
+#
+# Create a function that:
+#
+# takes a list and a number n
+# returns a new list with elements greater than n
+
+print('-' * 10, 'Task 8:', sep='\n')
+
+numbers = [1, 5, 8, 2, 10]
+n = 5
+
+def greater_than_n (x, y):
+    numbers_greater = []
+    for i in x:
+        if i > y:
+            numbers_greater.append(i)
+    return numbers_greater
+
+print(greater_than_n (numbers, n))
+
+# Task 9: Mini Calculator (Function + Logic)
+# Description:
+#
+# Create a function that:
+#
+# takes:
+# two numbers
+# an operator ('+', '-', '*', '/')
+# returns the result
+
+print('-' * 10, 'Task 9:', sep='\n')
+
+def calculator(x, y, operation):
+    if operation == '+':
+        return x + y
+    elif operation == '-':
+        return x - y
+    elif operation == '*':
+        return x * y
+    elif operation == '/':
+        if y == 0:
+            return 'Error'
+        return x / y
+    else:
+        return 'Error'
+
+print(calculator (5, 4, '+'))
+print(calculator (5, 4, '-'))
+print(calculator (5, 4, '*'))
+print(calculator (5, 0, '/'))
