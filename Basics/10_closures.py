@@ -22,4 +22,3 @@ strip2 = strip_spring(' !?,.')
 
 print(strip1('Hello ,. ! '))
 print(strip2('Hello ,. ! '))
-
