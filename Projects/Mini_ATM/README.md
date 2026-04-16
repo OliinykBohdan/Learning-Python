@@ -1,8 +1,20 @@
 # Mini ATM (Python)
 
+## Project Goal
+To practice basic Python programming concepts and demonstrate code refactoring from a monolithic structure to a modular design.
+
+## Versions
+
+### ATM_v1.py
+Basic version of ATM without functions (monolithic structure).
+
+### ATM_v2.py
+Refactored version using functions with improved structure and readability.
+
 ## About
 A simple console-based ATM simulation written in Python.
-It allows users to authenticate with a PIN, check balance, deposit, and withdraw money.
+
+This project demonstrates progression from a basic monolithic version (v1) to a refactored, function-based version (v2).
 ## Features
 - PIN authentication (3 attempts)
 - Check balance
@@ -17,17 +29,18 @@ git clone https://github.com/OliinykBohdan/Learning-Python.git
 2. Navigate to the project folder:
 cd Learning-Python/Projects/Mini_ATM
 3. Run the script:
-python ATM.py
+python ATM_v1.py or python ATM_v2.py
 ```
 
 ## What I learned
 - Working with loops and conditions
 - Handling user input
 - Basic error handling
+- Working with functions
 - Writing cleaner and more structured code
 
-## Future improvements
-- Add functions for better structure
-- Store balance in a file
-- Add multiple users
-- Improve UI/UX
+## Key Improvements in v2
+- Introduced function-based architecture
+- Improved code readability
+- Better separation of concerns
+- Cleaner main program flow
