@@ -41,3 +41,42 @@ def func_1():
     print('Main content')
 
 func_1()
+
+# Task 3
+
+def decorator_maker():
+    def decorator_3(func):
+        def inner(*args, **kwargs):
+            print(10 * '$')
+            func(*args, **kwargs)
+            print(10 * '$')
+        return inner
+    return decorator_3
+
+@decorator_maker()
+def func_1(name):
+    print(f'Main content {name}')
+
+func_1('123')
+
+# Task 4
+
+def repeat(num = 3):
+    def decorator_3(func):
+        def inner(*args, **kwargs):
+            for i in range(num):
+                func(*args, **kwargs)
+        return inner
+    return decorator_3
+
+@repeat(5)
+def func_1(name):
+    print(f'Main content {name}')
+
+
+@repeat()
+def func_2(name):
+    print(f'Main content {name}')
+
+func_1('123')
+func_2('54754')
