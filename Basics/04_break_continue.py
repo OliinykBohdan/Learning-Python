@@ -1,4 +1,4 @@
-# Exercise 1
+# Task 1
 
 students = ['Bohdan', 'Anton', 'Marina', 'Victoria', 'Oleg']
 
@@ -11,7 +11,7 @@ for i in students:
 
 print('Done')
 
-# Exercise 2
+# Task 2
 
 students = ['Bohdan', 'Anton', 'Marina', 'Victoria', 'Oleg']
 
@@ -22,14 +22,14 @@ for i in students:
 
 print('Done')
 
-# Exercise 3
+# Task 3
 
 for i in range(1, 101):
     if i % 3 == 0 or i % 5 == 0:
         continue
     print(i)
 
-# Exercise 4
+# Task 4
 
 result = 0
 

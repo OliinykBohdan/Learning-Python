@@ -1,4 +1,4 @@
-# Exercise 1
+# Task 1
 
 students = ['Bohdan', 'Anton', 'Dima', 'Victoria']
 
@@ -7,7 +7,7 @@ for st in students:
 
 print('Done')
 
-# Exercise 2
+# Task 2
 
 n = int(input('Enter a number: '))
 
@@ -17,7 +17,7 @@ for i in range(1, n + 1):
 
 print('Done')
 
-# Exercise 3
+# Task 3
 
 for i in range(1, 10):
     for j in range(1, 11):

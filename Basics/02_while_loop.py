@@ -1,4 +1,4 @@
-# # Exercise 1
+# Task 1
 
 number = 1
 
@@ -6,7 +6,7 @@ while number <= 10:
     print(number)
     number += 1
 
-# # Exercise 2
+# Task 2
 
 t_water = 30
 
@@ -17,7 +17,7 @@ while t_water < 100:
 
 print('The water boiled')
 
-# Exercise 3
+# Task 3
 
 result = 0
 
