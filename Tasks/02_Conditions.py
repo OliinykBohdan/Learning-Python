@@ -12,17 +12,17 @@ if number % 2 == 0:
     print('The number is even')
 else:
     print('An odd number')
+
+# Task 2: Grade Based on Score
 #
-# # Task 2: Grade Based on Score
-# #
-# # The user enters a number from 0 to 100 — their test score.
-# # The program should print a grade:
-# #
-# # 90–100 → 'Excellent'
-# # 75–89 → 'Good'
-# # 60–74 → 'Satisfactory'
-# # Less than 60 → 'Needs Improvement'
-# # If the number is not in 0–100 → 'Invalid score'
+# The user enters a number from 0 to 100 — their test score.
+# The program should print a grade:
+#
+# 90–100 → 'Excellent'
+# 75–89 → 'Good'
+# 60–74 → 'Satisfactory'
+# Less than 60 → 'Needs Improvement'
+# If the number is not in 0–100 → 'Invalid score'
 
 number = int(input('Enter a number: '))
 
