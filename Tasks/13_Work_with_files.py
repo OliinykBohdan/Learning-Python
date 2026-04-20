@@ -1,3 +1,12 @@
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+FILES_DIR = os.path.join(BASE_DIR, 'work_with_files_(test)')
+
+data_file = os.path.join(FILES_DIR, 'data.txt')
+output_file = os.path.join(FILES_DIR, 'output.txt')
+notes_file = os.path.join(FILES_DIR, 'notes.txt')
+
 # Task 1: Read File (Base)
 # Description:
 #
@@ -12,11 +21,10 @@
 # open the file
 # read all content
 # print it
-from itertools import count
 
 print ('-' * 10, 'Task 1:', sep = '\n')
 
-with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\data.txt', 'r') as file:
+with open(data_file, 'r') as file:
     data = file.read()
 print(data)
 
@@ -30,7 +38,7 @@ print(data)
 
 print ('-' * 10, 'Task 2:', sep = '\n')
 
-with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\data.txt', 'r') as file:
+with open(data_file, 'r') as file:
     for line in file:
         print(line)
 
@@ -44,7 +52,7 @@ with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with
 
 print ('-' * 10, 'Task 3:', sep = '\n')
 
-with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\output.txt', 'w') as file:
+with open(output_file, 'w') as file:
     file.write('Portfolio:\n' + 'Name Bohdan\n' + 'Age 30\n')
 
 # Task 4: Append to File
@@ -58,10 +66,10 @@ with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with
 
 print('-' * 10, '\nTask 4:')
 
-with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\output.txt', 'a') as file:
+with open(output_file, 'a') as file:
     file.write('Hobby football')
 
-with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\output.txt', 'r') as file:
+with open(output_file, 'r') as file:
     portfolio = file.read()
     print(portfolio)
 
@@ -77,7 +85,7 @@ with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with
 
 print('-' * 10, '\nTask 5:')
 
-with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\notes.txt', 'a') as file:
+with open(notes_file, 'a') as file:
 
     while True:
         notes = input('Notes or exit: ')
