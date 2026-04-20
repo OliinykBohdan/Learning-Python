@@ -31,8 +31,8 @@ print(data)
 print ('-' * 10, 'Task 2:', sep = '\n')
 
 with open('C:\\Users\\Spirit\\PycharmProjects\\Python_learning\\Tasks\\work_with_files_(test)\\data.txt', 'r') as file:
-    for i in file.read():
-        print(i)
+    for line in file:
+        print(line)
 
 # Task 3: Write to File
 # Description:
