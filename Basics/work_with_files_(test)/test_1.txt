@@ -1,0 +1,6 @@
+Opening modes:
+r - read (error if the file does not exist)
+w - overwrite (creates or deletes the file)
+a - append (adds to the end)
+x - create a new file (if it exists - error)
+r - read (error if the file does not exist)
