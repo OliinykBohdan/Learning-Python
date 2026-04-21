@@ -26,7 +26,6 @@ print('Result: done')
 print('-' * 10, 'Task 2:', sep='\n')
 
 numbers = [2, 4, 6, 8]
-
 total = 0
 
 for number in numbers:
@@ -45,7 +44,6 @@ print('Sum of all elements:', total)
 print('-' * 10, 'Task 3:', sep='\n')
 
 numbers = [10, 3, 7, 25, 1]
-
 largest_number = numbers[0]
 
 for number in numbers:
@@ -65,7 +63,6 @@ print('The largest of the number:', largest_number)
 print('-' * 10, 'Task 4:', sep='\n')
 
 numbers = [1, 2, 3, 4, 5, 6]
-
 numbers_even = []
 
 for number in numbers:
@@ -85,7 +82,6 @@ print('Even numbers of the list:', numbers_even)
 print('-' * 10, 'Task 5:', sep='\n')
 
 numbers = [1, 2, 2, 3, 2, 4]
-
 number2 = 0
 
 for number in numbers:
@@ -106,7 +102,6 @@ print('Number 2 appears of the list:', number2)
 print('-' * 10, 'Task 6:', sep='\n')
 
 numbers = [1, 2, 3, 4, 5]
-
 reversed_list = []
 
 for number in range (4, -1, -1):
@@ -173,7 +168,6 @@ print('Second largest number:', second_largest)
 print('-' * 10, 'Task 9:', sep='\n')
 
 numbers = [1, 2, 3, 4, 5]
-
 reverse_numbers = numbers[::-1]
 
 print('Reversed numbers:', reverse_numbers)
@@ -191,7 +185,6 @@ print('Reversed numbers:', reverse_numbers)
 print('-' * 10, 'Task 10:', sep='\n')
 
 numbers_1 = [10, 20, 30, 40, 50, 60]
-
 numbers_2 = numbers_1[1:5]
 
 print('Result:', numbers_2)
