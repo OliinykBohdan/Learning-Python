@@ -116,3 +116,36 @@ print('Converted list:', list1)
 # list1.append(5)
 #
 # print('Converted list:', list1)
+
+# Task 7: Unpack Tuple
+# Given a tuple:
+# (10, 20, 30)
+#
+# Task:
+# unpack into variables:
+# a, b, c
+
+print('-' * 10, 'Task 7:', sep='\n')
+
+numbers = (10, 20, 30)
+a, b, c = numbers
+
+print('a:', a,'b:',  b, 'c:', c)
+
+# Task 8: Swap Values
+# Given:
+# a = 5
+# b = 10
+#
+# Task:
+# swap values
+# without using a temporary variable
+
+print('-' * 10, 'Task 8:', sep='\n')
+
+a = 5
+b = 10
+
+a, b = b, a
+
+print('a:', a, 'b:', b)
