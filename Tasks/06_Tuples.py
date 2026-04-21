@@ -44,6 +44,8 @@ data = ('a', 'b', 'c')
 for i in data:
     print(i)
 
+print('Result: done')
+
 # Task 4: Count Element
 #
 # You have a tuple:
