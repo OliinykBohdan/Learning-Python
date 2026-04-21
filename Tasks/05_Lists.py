@@ -157,3 +157,39 @@ unique_list.sort()
 second_largest = unique_list[-2]
 
 print('Second largest number:', second_largest)
+
+# Task 9: Reverse List (Slicing)
+# Given a list:
+# [1, 2, 3, 4, 5]
+#
+# Task:
+# reverse the list using slicing
+#
+# Result:
+# [5, 4, 3, 2, 1]
+
+print('-' * 10, 'Task 9:', sep='\n')
+
+numbers = [1, 2, 3, 4, 5]
+
+reverse_numbers = numbers[::-1]
+
+print('Reversed numbers:', reverse_numbers)
+
+# Task 10: Extract Middle Part
+# Given a list:
+# [10, 20, 30, 40, 50, 60]
+#
+# Task:
+# get elements from index 1 to index 4 (inclusive of start, exclusive of end)
+#
+# Result:
+# [20, 30, 40, 50]
+
+print('-' * 10, 'Task 10:', sep='\n')
+
+numbers_1 = [10, 20, 30, 40, 50, 60]
+
+numbers_2 = numbers_1[1:5]
+
+print('Result:', numbers_2)
