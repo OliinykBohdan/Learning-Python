@@ -14,7 +14,7 @@
 # city
 from operator import add
 
-print('\nTask 1:')
+print('-' * 10, 'Task 1:', sep='\n')
 
 user = {
     'name': 'Alex',
@@ -40,7 +40,7 @@ print('city:', user['city'])
 #
 # Print the dictionary
 
-print('\nTask 2:')
+print('-' * 10, 'Task 2:', sep='\n')
 
 user = {
     'name': 'Alex',
@@ -62,7 +62,7 @@ print(user)
 #
 # Change the age to 26
 
-print('\nTask 3:')
+print('-' * 10, 'Task 3:', sep='\n')
 
 user = {
     'name': 'Alex',
@@ -89,7 +89,7 @@ print(user)
 # age: 25
 # city: Kyiv
 
-print('\nTask 4:')
+print('-' * 10, 'Task 4:', sep='\n')
 
 user = {
     'name': 'Alex',
@@ -114,7 +114,7 @@ for key, value in user.items():
 # if 'city' exists → print the value
 # if not → 'Key not found'
 
-print('\nTask 5:')
+print('-' * 10, 'Task 5:', sep='\n')
 
 user = {
     'name': 'Alex',
@@ -138,7 +138,7 @@ print(city)
 #
 # {'h': 1, 'e': 1, 'l': 2, 'o': 1}
 
-print('\nTask 6:')
+print('-' * 10, 'Task 6:', sep='\n')
 
 text = 'hello'
 text_dict = {}
@@ -171,7 +171,7 @@ print(text_dict)
 #
 # without using max()
 
-print('\nTask 7:')
+print('-' * 10, 'Task 7:', sep='\n')
 
 scores = {
     'Alex': 50,
@@ -206,7 +206,7 @@ print(f'{max_name}: {max_score}')
 # if the product is new → add it
 # if the product already exists → add the quantity to the existing one
 
-print('\nTask 8:')
+print('-' * 10, 'Task 8:', sep='\n')
 
 cart = {}
 while True:
@@ -239,7 +239,7 @@ while True:
 # a product
 # a quantity to remove
 
-print('\nTask 9:')
+print('-' * 10, 'Task 9:', sep='\n')
 
 cart = {
     'apple': 5,
