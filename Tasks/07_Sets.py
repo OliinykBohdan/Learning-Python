@@ -8,7 +8,7 @@
 # Convert it back to a list
 # Print the result
 
-print('\nTask 1:')
+print('-' * 10, 'Task 1:', sep='\n')
 
 numbers = [1, 2, 2, 3, 4, 4, 5]
 numbers_set = set(numbers)
@@ -30,7 +30,7 @@ print(numbers)
 # Add numbers 4 and 5
 # Print the result
 
-print('\nTask 2:')
+print('-' * 10, 'Task 2:', sep='\n')
 
 nums = {1, 2, 3}
 
@@ -48,7 +48,7 @@ print(nums)
 # Remove number 3
 # Print the result
 
-print('\nTask 3:')
+print('-' * 10, 'Task 3:', sep='\n')
 
 nums = {1, 2, 3, 4, 5}
 nums.remove(3)
@@ -64,7 +64,7 @@ print(nums)
 #
 # Find the common elements
 
-print('\nTask 4:')
+print('-' * 10, 'Task 4:', sep='\n')
 
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
@@ -78,7 +78,7 @@ print(set3)
 #
 # Find elements that are in set1 but not in set2
 
-print('\nTask 5:')
+print('-' * 10, 'Task 5:', sep='\n')
 
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
@@ -94,7 +94,7 @@ print(set3)
 #
 # Print all elements using a for loop
 
-print('\nTask 6:')
+print('-' * 10, 'Task 6:', sep='\n')
 
 nums = {10, 20, 30}
 
@@ -110,7 +110,7 @@ for num in nums:
 # Create a new list without duplicates
 # do NOT use set()
 
-print('\nTask 7:')
+print('-' * 10, 'Task 7:', sep='\n')
 
 numbers = [1, 2, 2, 3, 4, 4, 5]
 unique_numbers = []
