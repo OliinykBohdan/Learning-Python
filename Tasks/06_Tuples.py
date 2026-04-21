@@ -149,3 +149,20 @@ b = 10
 a, b = b, a
 
 print('a:', a, 'b:', b)
+
+# Task 9: Slice Tuple
+# Given a tuple:
+# (1, 2, 3, 4, 5, 6)
+#
+# Task:
+# get only even-index elements (0, 2, 4...)
+#
+# Result:
+# (1, 3, 5)
+
+print('-' * 10, 'Task 9:', sep='\n')
+
+numbers_1 = (1, 2, 3, 4, 5, 6)
+number_2 = numbers_1[::2]
+
+print('Result:', number_2)
