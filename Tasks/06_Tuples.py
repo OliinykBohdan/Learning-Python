@@ -9,7 +9,7 @@
 # the first element
 # the last element
 
-print('\nTask 1:')
+print('-' * 10, 'Task 1:', sep='\n')
 
 data = (10, 20, 30, 40)
 
@@ -23,7 +23,7 @@ print('The first/last elements:', data[0], data[3])
 #
 # Print the length of the tuple
 
-print('\nTask 2:')
+print('-' * 10, 'Task 2:', sep='\n')
 
 data = (5, 15, 25, 35, 45)
 
@@ -37,7 +37,7 @@ print('Length:', len(data))
 #
 # Print all elements using a for loop
 
-print('\nTask 3:')
+print('-' * 10, 'Task 3:', sep='\n')
 
 data = ('a', 'b', 'c')
 
@@ -53,7 +53,7 @@ for i in data:
 # Count how many times the number 2 appears
 # without using .count()
 
-print('\nTask 4:')
+print('-' * 10, 'Task 4:', sep='\n')
 
 data = (1, 2, 2, 3, 2, 4)
 
@@ -74,7 +74,7 @@ print('Number 2 appears:', number_2)
 # Find the largest number
 # without using max()
 
-print('\nTask 5:')
+print('-' * 10, 'Task 5:', sep='\n')
 
 data = (10, 5, 20, 3)
 
@@ -96,7 +96,7 @@ print('Largest number:', largest_number)
 # Add number 5
 # Print the result
 
-print('\nTask 6:')
+print('-' * 10, 'Task 6:', sep='\n')
 
 data = (1, 2, 3, 4)
 
