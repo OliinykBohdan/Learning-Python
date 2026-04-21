@@ -120,3 +120,42 @@ for num in numbers:
         unique_numbers.append(num)
 
 print(unique_numbers)
+
+# Task 8: Common Elements
+# Given two lists:
+# [1, 2, 3, 4]
+# [3, 4, 5, 6]
+#
+# Task:
+# find common elements
+
+print('-' * 10, 'Task 8:', sep='\n')
+
+numbers_1 = [1, 2, 3, 4]
+numbers_2 = [3, 4, 5, 6]
+
+common_elements = set(numbers_1) & set(numbers_2)
+# or
+# common_elements = set(numbers_1).intersection(set(numbers_2))
+
+print(common_elements)
+
+# Task 9: Unique Values
+# Given a list:
+# [1, 2, 2, 3, 3, 3, 4]
+#
+# Task:
+# get only unique values
+
+print('-' * 10, 'Task 9:', sep='\n')
+
+numbers = [1, 2, 2, 3, 3, 3, 4]
+
+unique_values = set(numbers)
+# or
+# unique_values = []
+# for num in numbers:
+#     if num not in unique_values:
+#         unique_values.append(num)
+
+print(unique_values)
