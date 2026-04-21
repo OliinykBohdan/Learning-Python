@@ -6,7 +6,7 @@
 #
 # Print all elements of the list using a for loop
 
-print('\nTask 1:')
+print('-' * 10, 'Task 1:', sep='\n')
 
 numbers = [1, 2, 3, 4, 5]
 
@@ -21,7 +21,7 @@ for number in numbers:
 #
 # Find the sum of all elements (without using sum())
 
-print('\nTask 2:')
+print('-' * 10, 'Task 2:', sep='\n')
 
 numbers = [2, 4, 6, 8]
 
@@ -40,7 +40,7 @@ print('Sum of all elements:', total)
 #
 # Find the largest number (without using max())
 
-print('\nTask 3:')
+print('-' * 10, 'Task 3:', sep='\n')
 
 numbers = [10, 3, 7, 25, 1]
 
@@ -60,7 +60,7 @@ print('The largest of the number:', largest_number)
 #
 # Create a new list with only even numbers
 
-print('\nTask 4:')
+print('-' * 10, 'Task 4:', sep='\n')
 
 numbers = [1, 2, 3, 4, 5, 6]
 
@@ -80,7 +80,7 @@ print('Even numbers of the list:', numbers_even)
 #
 # Count how many times the number 2 appears
 
-print('\nTask 5:')
+print('-' * 10, 'Task 5:', sep='\n')
 
 numbers = [1, 2, 2, 3, 2, 4]
 
@@ -101,7 +101,7 @@ print('Number 2 appears of the list:', number2)
 # Create a new list in reverse order
 # without using reverse() and without slicing [::-1]
 
-print('\nTask 6:')
+print('-' * 10, 'Task 6:', sep='\n')
 
 numbers = [1, 2, 3, 4, 5]
 
