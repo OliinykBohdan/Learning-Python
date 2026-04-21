@@ -93,3 +93,49 @@ with open(notes_file, 'a') as file:
             break
         else:
             file.write(notes + '\n')
+
+# Task 6: Count Lines (Function)
+#  Description:
+#
+# Create:
+#
+# def count_lines(filename):
+#
+#  Task:
+#
+# return number of lines
+
+print('-' * 10, '\nTask 6:')
+
+def count_lines(file_path):
+    count = 0
+    with open(file_path, 'r') as file:
+        for line in file:
+            count += 1
+    return count
+
+print('Number of lines:', count_lines(notes_file))
+
+# Task 7: Count Words (Function)
+# Description:
+#
+# Create:
+#
+# def count_words(filename):
+#
+#  Task:
+#
+# count all words in file
+#  Hint:
+# .split()
+
+print('-' * 10, '\nTask 7:')
+
+def count_words(filename):
+
+    with open(filename, 'r') as file:
+        text = file.read()
+    words = text.split()
+    return len(words)
+
+print('Number of words:', count_words(notes_file))
