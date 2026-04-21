@@ -111,3 +111,49 @@ for number in range (4, -1, -1):
     reversed_list.append(numbers[number])
 
 print('Reversed list:', reversed_list)
+
+# Task 7: Remove Duplicates (keep order)
+# Given a list:
+# [1, 2, 2, 3, 1, 4]
+#
+# Task:
+# remove duplicates
+# but keep the original order
+#
+# Result:
+# [1, 2, 3, 4]
+#
+# hint: do NOT use set() directly
+
+print('-' * 10, 'Task 7:', sep='\n')
+
+numbers = [1, 2, 2, 3, 1, 4]
+numbers_1 = []
+
+for number in numbers:
+    if number not in numbers_1:
+        numbers_1.append(number)
+
+print('Numbers without duplicates:', numbers_1)
+
+# Task 8: Find Second Largest
+# Given a list of numbers
+#
+# Task:
+# find the second largest number
+#
+# hint:
+#
+# use sort
+# or max + remove
+
+print('-' * 10, 'Task 8:', sep='\n')
+
+numbers = [1, 2, 2, 3, 1, 4]
+
+unique_list = list(set(numbers))
+unique_list.sort()
+
+second_largest = unique_list[-2]
+
+print('Second largest number:', second_largest)
