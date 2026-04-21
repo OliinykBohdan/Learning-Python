@@ -13,6 +13,8 @@ numbers = [1, 2, 3, 4, 5]
 for number in numbers:
     print(number)
 
+print('Result: done')
+
 # Task 2: Sum of List
 #
 # You have a list:
