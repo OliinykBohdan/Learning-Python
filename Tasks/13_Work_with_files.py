@@ -67,7 +67,7 @@ with open(output_file, 'w') as file:
 print('-' * 10, '\nTask 4:')
 
 with open(output_file, 'a') as file:
-    file.write('Hobby football')
+    file.write('Hobby football\n')
 
 with open(output_file, 'r') as file:
     portfolio = file.read()
