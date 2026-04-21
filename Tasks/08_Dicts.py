@@ -270,3 +270,44 @@ while True:
             cart[product] -= quantity
 
     print(cart)
+
+# Task 10: Invert Dictionary
+# Given:
+# {'a': 1, 'b': 2, 'c': 3}
+#
+# Task:
+# swap keys and values
+#
+# Result:
+# {1: 'a', 2: 'b', 3: 'c'}
+
+print('-' * 10, 'Task 10:', sep='\n')
+
+dictionaries_1 = {'a': 1, 'b': 2, 'c': 3}
+
+dictionaries_2 = {
+value: key
+    for key, value in dictionaries_1.items()
+}
+
+print(dictionaries_2)
+
+# Task 11: Count Frequency
+# Given a list:
+# ['apple', 'banana', 'apple', 'orange', 'banana']
+#
+# Task:
+# count how many times each element appears
+#
+# Result:
+# {'apple': 2, 'banana': 2, 'orange': 1}
+
+print('-' * 10, 'Task 11:', sep='\n')
+
+fruits = ['apple', 'banana', 'apple', 'orange', 'banana']
+fruit_count = {}
+
+for fruit in fruits:
+    fruit_count[fruit] = fruit_count.get(fruit, 0) + 1
+
+print(fruit_count)
