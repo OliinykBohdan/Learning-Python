@@ -71,8 +71,6 @@ p.greet()
 print('-' * 10, 'Task 3:', sep = '\n')
 
 class Person:
-    name = None
-    age = None
 
     def __init__(self, name, age):
         self.name = name
@@ -102,8 +100,6 @@ p2.greet()
 print('-' * 10, 'Task 4:', sep = '\n')
 
 class Person:
-    name = None
-    age = None
 
     def __init__(self, name, age):
         self.name = name
@@ -140,9 +136,6 @@ p.have_birthday()
 print('-' * 10, 'Task 5:', sep = '\n')
 
 class Product:
-    name = None
-    price = None
-    quantity = None
 
     def __init__(self, name, price, quantity):
         self.name = name
@@ -172,9 +165,6 @@ print(f'Total price: {p.total_price()}')
 print('-' * 10, 'Task 6:', sep = '\n')
 
 class Product:
-    name = None
-    price = None
-    quantity = None
 
     def __init__(self, name, price, quantity):
         self.name = name
@@ -219,7 +209,6 @@ for product in cart:
 print('-' * 10, 'Task 7:', sep = '\n')
 
 class BankAccount:
-    balance = None
 
     def __init__(self, balance):
         self.balance = balance
@@ -266,7 +255,6 @@ print('-' * 10, 'Task 8:', sep = '\n')
 
 class User:
     user_count = 0
-    balance = None
 
     def __init__(self, balance):
         self.balance = balance
@@ -309,8 +297,6 @@ print(User.user_count)
 print('-' * 10, 'Task 9:', sep = '\n')
 
 class Person:
-    name = None
-    age = None
 
     def __init__(self, name, age):
         self.name = name
