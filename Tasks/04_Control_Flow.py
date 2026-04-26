@@ -3,6 +3,8 @@
 # # Print numbers from 1 to 10.
 # # When the number equals 5 — stop the loop.
 
+print('-' * 10, 'Task 1:', sep='\n')
+
 for i in range(1, 11):
     if i == 5:
         break
@@ -12,6 +14,8 @@ for i in range(1, 11):
 # #
 # # Print numbers from 1 to 10,
 # # but skip number 5.
+
+print('-' * 10, 'Task 2:', sep='\n')
 
 for i in range(1, 11):
     if i == 5:
@@ -29,6 +33,8 @@ for i in range(1, 11):
 # # when you find the first negative number
 # # print it and stop the loop
 
+print('-' * 10, 'Task 3:', sep='\n')
+
 numbers = [3, 7, 2, -5, 10, -1]
 
 for number in numbers:
@@ -44,6 +50,8 @@ for number in numbers:
 # # numbers = [3, -2, 5, -1, 7]
 # #
 # # You need to print only positive numbers
+
+print('-' * 10, 'Task 4:', sep='\n')
 
 numbers = [3, -2, 5, -1, 7]
 
@@ -62,6 +70,7 @@ for number in numbers:
 # if not → print 'Wrong password'
 # if all 3 attempts are used → print 'Access denied'
 
+print('-' * 10, 'Task 5:', sep='\n')
 
 attempts = 0
 password = '1234'
@@ -87,6 +96,8 @@ if attempts == 3:
 # if the user enters 'exit' → stop the program (break)
 # if the guess is wrong → print 'Too high' or 'Too low'
 # if correct → print 'You win!'
+
+print('-' * 10, 'Task 6:', sep='\n')
 
 secret = '7'
 

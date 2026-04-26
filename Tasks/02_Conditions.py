@@ -6,6 +6,8 @@
 # Prints 'The number is even' if the number is divisible by 2.
 # Prints 'The number is odd' if it is not divisible by 2.
 
+print('-' * 10, 'Task 1:', sep='\n')
+
 number = int(input('Enter a number: '))
 
 if number % 2 == 0:
@@ -23,6 +25,8 @@ else:
 # 60–74 → 'Satisfactory'
 # Less than 60 → 'Needs Improvement'
 # If the number is not in 0–100 → 'Invalid score'
+
+print('-' * 10, 'Task 2:', sep='\n')
 
 number = int(input('Enter a number: '))
 
@@ -48,6 +52,8 @@ else:
 # 9, 10, 11 → 'Autumn'
 # Any other number → 'Invalid month number'
 
+print('-' * 10, 'Task 3:', sep='\n')
+
 month = int(input('Enter a number month: '))
 
 if month == 12 or month == 1 or month == 2:
@@ -69,6 +75,8 @@ else:
 # If the login is 'guest' → 'Welcome, guest!'
 # Any other login → 'Unknown user'
 
+print('-' * 10, 'Task 4:', sep='\n')
+
 login_name = input('Please enter your login name: ')
 
 if login_name == 'admin':
@@ -82,6 +90,8 @@ else:
 #
 # The user enters three numbers.
 # The program should print the largest number among them. Use if, elif, else (do not use the max function).
+
+print('-' * 10, 'Task 5:', sep='\n')
 
 number1 = int(input('Enter a number 1: '))
 number2 = int(input('Enter a number 2: '))

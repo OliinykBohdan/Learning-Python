@@ -12,6 +12,8 @@
 # Question:
 # What is the result type in each operation?
 
+print('-' * 10, 'Task 1:', sep='\n')
+
 a = 2
 b = 5.3
 c = '5'
@@ -31,6 +33,8 @@ print('Addition: ', a+b, 'Subtraction: ', a-b, 'Multiplication: ', a*b, 'Divisio
 #
 # Question:
 # What happens if you do a + c without conversion?
+
+print('-' * 10, 'Task 2:', sep='\n')
 
 Add = float(a) + int(c)
 
@@ -52,6 +56,8 @@ print(Add)
 # Explain the difference between:
 # / and //
 # % and //
+
+print('-' * 10, 'Task 3:', sep='\n')
 
 x = 10
 y = 3

@@ -2,12 +2,16 @@
 #
 # Print numbers from 1 to 10 using a for loop.
 
+print('-' * 10, 'Task 1:', sep='\n')
+
 for i in range(1, 11):
     print(i)
 
 # Task 2: Even Numbers (for)
 #
 # Print all even numbers from 1 to 20.
+
+print('-' * 10, 'Task 2:', sep='\n')
 
 for i in range(1, 21):
     if i % 2 == 0:
@@ -17,6 +21,8 @@ for i in range(1, 21):
 #
 # The user enters a number n.
 # You need to calculate the sum of only even numbers from 1 to n.
+
+print('-' * 10, 'Task 3:', sep='\n')
 
 n = int(input('Enter a number: '))
 total = 0
@@ -30,6 +36,8 @@ print(total)
 # Task 4: Numbers from 10 to 1 (while)
 #
 # Print numbers from 10 to 1 in reverse order using a while loop.
+
+print('-' * 10, 'Task 4:', sep='\n')
 
 number = 10
 
@@ -45,6 +53,8 @@ while number > 0:
 # ask the user to enter a password
 # keep asking while the password is incorrect
 # print 'Access granted' when the password is correct
+
+print('-' * 10, 'Task 5:', sep='\n')
 
 passw = '1234'
 password = input('Enter your password: ')
