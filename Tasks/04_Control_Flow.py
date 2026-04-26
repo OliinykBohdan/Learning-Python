@@ -112,5 +112,3 @@ while True:
         print('Too high')
     elif int(number) < int(secret):
         print('Too low')
-
-
