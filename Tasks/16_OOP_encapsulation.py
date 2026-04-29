@@ -221,3 +221,105 @@ st = Student('')
 
 st.set_grade(10)
 print('Grade:', st.get_grade())
+
+# Task 8: Simple @property
+#
+# Description:
+#
+# Create a class User
+#
+# Requirements:
+#
+# private attribute _name
+# getter using @property
+# setter using @name.setter
+#
+# Rules:
+#
+# name must not be empty
+# if empty → print error
+# else → update value
+#
+# Test:
+#
+# create object
+# set name
+# print name
+
+print('-' * 10, 'Task 8:', sep = '\n')
+
+class User:
+    def __init__(self, name):
+        self.name = name
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        if name == '':
+            print('Name cannot be empty')
+            self._name = None
+        else:
+            self._name = name
+
+n = User('')
+
+# Task 9: Temperature
+#
+# Description:
+#
+# Create a Temperature class that:
+#
+# accepts temperature values in degrees Celsius
+# has a celsius property
+# does not allow values below -273.15 (absolute zero)
+
+print('-' * 10, 'Task 9:', sep = '\n')
+
+class Temperature:
+    def __init__(self, temperature):
+        self.temperature = temperature
+
+    @property
+    def temperature(self):
+        return self._temperature
+
+    @temperature.setter
+    def temperature(self, temperature):
+        if temperature < -273.15:
+            print('An impossible temperature')
+            self._temperature = None
+        else:
+            self._temperature = temperature
+
+t = Temperature(-293.15)
+
+# Task 10: Email
+# Description:
+#
+# Create a User class that:
+#
+# has an email address
+# does not allow an email address to be set without an '@'
+
+print('-' * 10, 'Task 10:', sep = '\n')
+
+class User:
+    def __init__(self, email):
+        self.email = email
+
+    @property
+    def email(self):
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        if '@' not in email:
+            print('An email address must contain the @ symbol')
+            self._email = None
+        else:
+                self._email = email
+
+u = User('1111аа')
