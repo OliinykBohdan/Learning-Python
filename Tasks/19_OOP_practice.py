@@ -279,3 +279,181 @@ employees = [FullTimeEmployee('John'), PartTimeEmployee('Will', 130), Freelancer
 
 for employee in employees:
     print(employee.calculate_salary())
+
+# Task 8: Payment System
+# Requirements
+#
+# Create a system for processing payments.
+#
+# 1. Abstract Class
+#
+# Create a base class:
+#
+# PaymentMethod
+#
+# It must:
+#
+# contain the method:
+#
+# pay(amount)
+# this method must NOT have any implementations
+# 2. Implementations
+#
+# Create the following classes:
+#
+# CreditCard
+# PayPal
+# CryptoWallet
+# 3. Logic
+#
+# Each class must implement pay(amount) in its own way:
+#
+# CreditCard → ‘Paid {amount} using Credit Card’
+# PayPal → ‘Paid {amount} using PayPal’
+# CryptoWallet → ‘Paid {amount} using Crypto’
+# 4. Polymorphism
+#
+# Create a list:
+#
+# payments = [...]
+#
+# And call:
+#
+# for payment in payments:
+#     payment.pay(100)
+# 5. Additional (important)
+# You cannot create a PaymentMethod object
+# Use Python’s abstraction mechanism
+
+print('-' * 10, 'Task 8:', sep = '\n')
+
+from abc import ABC, abstractmethod
+
+class PaymentMethod(ABC):
+    @abstractmethod
+    def pay(self, amount):
+        pass
+
+class CreditCard(PaymentMethod):
+    def pay(self, amount):
+        print(f'Paid {amount} using Credit Card')
+
+class PayPal(PaymentMethod):
+    def pay(self, amount):
+        print(f'Paid {amount} using PayPal')
+
+class CryptoWallet(PaymentMethod):
+    def pay(self, amount):
+        print(f'Paid {amount} using Crypto')
+
+payments = [CreditCard(), PayPal(), CryptoWallet()]
+
+for payment in payments:
+    payment.pay(100)
+
+# Task 9: Geometric Shapes
+# Problem Statement
+#
+# Create a system for working with shapes.
+#
+# 1. Abstract class
+# Shape
+#
+# Methods:
+#
+# area()
+# perimeter()
+#
+# without implementation
+#
+# 2. Implementations
+#
+# Create the following classes:
+#
+# Rectangle
+# Circle
+# Triangle
+# 3. Logic
+#
+# Each class must:
+#
+# accept the necessary parameters (sides, radius, etc.)
+# implement:
+# area()
+# perimeter()
+# 4. Polymorphism
+# shapes = [...]
+# for shape in shapes:
+#     print(shape.area())
+#     print(shape.perimeter())
+# 5. Condition
+# do not use if type(...)
+# each class is responsible for its own logic
+
+print('-' * 10, 'Task 9:', sep = '\n')
+
+import math
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, a, b):
+        if a < 1 or b < 1:
+            raise ValueError('Sides must be positive')
+
+        self.a = a
+        self.b = b
+
+    def area(self):
+        return self.a * self.b
+
+    def perimeter(self):
+        return 2 * self.a + 2 * self.b
+
+class Circle(Shape):
+    def __init__(self, r):
+        if r < 1:
+            raise ValueError('Radius must be positive')
+
+        self.r = r
+
+    def area(self):
+        return math.pi * self.r ** 2
+
+    def perimeter(self):
+        return math.pi * self.r * 2
+
+class Triangle(Shape):
+    def __init__(self, a, b, c):
+        if a < 1 or b < 1 or c < 1:
+            raise ValueError('Sides must be positive')
+
+        if a + b <= c or a + c <= b or b + c <= a:
+            raise ValueError("Invalid triangle")
+
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def _semi_perimeter(self):
+        return (self.a + self.b + self.c) / 2
+
+    def area(self):
+        p = self._semi_perimeter()
+        return math.sqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
+
+    def perimeter(self):
+        return self.a + self.b + self.c
+
+shapes = [Rectangle(7, 10), Circle(7), Triangle(8, 7, 6)]
+
+for shape in shapes:
+    print(f'{shape.__class__.__name__} area: {shape.area()}')
+    print(f'{shape.__class__.__name__} perimeter: {shape.perimeter()}')
