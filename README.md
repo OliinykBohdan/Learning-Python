@@ -15,9 +15,10 @@ I am currently working towards my first junior Python/backend position.
 
 ## Repository Structure
 ```
-/Basics        simple scripts and core concept practice
-/Tasks         small exercises and problem-solving tasks
-/Projects      mini-projects with practical use cases
+/Basics         simple scripts and core concept practice
+/Tasks          small exercises and problem-solving tasks
+/Mini_Projects  small practical mini-projects
+/Projects       larger and more complete projects
 ```
 ## Technologies
 - Python 3
