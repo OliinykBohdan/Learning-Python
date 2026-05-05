@@ -2,6 +2,7 @@
 
 ## About
 Simple console-based library system.
+This project was built to practice basic OOP concepts and object interaction.
 
 ## Features
 - Add books
