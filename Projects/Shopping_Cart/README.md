@@ -19,11 +19,8 @@ The program also keeps track of available stock and updates it dynamically.
 
 ## How to run
 ```
-1. Clone the repository:
 git clone https://github.com/OliinykBohdan/Learning-Python.git
-2. Navigate to the project folder:
 cd Learning-Python/Projects/Shopping_Cart
-3. Run the script:
 python ShoppingCart.py
 ```
 

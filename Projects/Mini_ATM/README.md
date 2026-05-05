@@ -24,11 +24,8 @@ This project demonstrates progression from a basic monolithic version (v1) to a 
 
 ## How to run
 ```
-1. Clone the repository:
 git clone https://github.com/OliinykBohdan/Learning-Python.git
-2. Navigate to the project folder:
 cd Learning-Python/Projects/Mini_ATM
-3. Run the script:
 python ATM_v1.py or python ATM_v2.py
 ```
 
