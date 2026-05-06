@@ -18,7 +18,7 @@ The program also keeps track of available stock and updates it dynamically.
 - Input validation and error handling
 
 ## How to run
-```
+```bash
 git clone https://github.com/OliinykBohdan/Learning-Python.git
 cd Learning-Python/Projects/Shopping_Cart
 python ShoppingCart.py

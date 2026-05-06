@@ -10,7 +10,7 @@ This project was built to practice basic OOP concepts and object interaction.
 - Track borrowed books
 
 ## How to run
-```
+```bash
 git clone https://github.com/OliinykBohdan/Learning-Python.git
 cd Learning-Python/Mini_Projects/Library_Mini
 python Library.py
