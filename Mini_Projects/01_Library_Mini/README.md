@@ -1,26 +1,25 @@
-# Todo App (Python)
+# Library Mini (Python)
 
 ## About
-Simple console-based Todo application written in Python.
+Simple console-based library system.
 This project was built to practice basic OOP concepts and object interaction.
 
 ## Features
-- Add tasks
-- Mark tasks as done
-- Remove tasks
-- Show all tasks with their status
+- Add books
+- Borrow books with availability check
+- Track borrowed books
 
 ## How to run
 ```bash
 git clone https://github.com/OliinykBohdan/Learning-Python.git
-cd Learning-Python/Mini_Projects/Todo_App
-python Todo_App.py
+cd Learning-Python/Mini_Projects/01_Library_Mini
+python Library.py
 ```
 
 ## Concepts
 - OOP (classes, objects)
 - Object interaction
-- Working with lists of objects
+- Lists of objects
 
 ## Status
 MVP

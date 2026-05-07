@@ -1,19 +1,19 @@
-# Cinema Booking (Python)
+# Parking Lot (Python)
 
 ## About
-Simple console-based Cinema Booking application written in Python.
+Simple console-based Parking Lot application written in Python.
 This project was built to practice basic OOP concepts and object interaction.
 
 ## Features
-- Reserve a seat
-- Cancel a reservation
-- Show available seats
+- Add user (park a car)
+- Remove user (leave parking)
+- Show available parking spaces
 
 ## How to run
 ```bash
 git clone https://github.com/OliinykBohdan/Learning-Python.git
-cd Learning-Python/Mini_Projects/04_Cinema_Booking
-python Cinema_Booking.py
+cd Learning-Python/Mini_Projects/03_Parking_Lot
+python 03_Parking_Lot.py
 ```
 
 ## Concepts

@@ -1,19 +1,20 @@
-# Parking Lot (Python)
+# Todo App (Python)
 
 ## About
-Simple console-based Parking Lot application written in Python.
+Simple console-based Todo application written in Python.
 This project was built to practice basic OOP concepts and object interaction.
 
 ## Features
-- Add user (park a car)
-- Remove user (leave parking)
-- Show available parking spaces
+- Add tasks
+- Mark tasks as done
+- Remove tasks
+- Show all tasks with their status
 
 ## How to run
 ```bash
 git clone https://github.com/OliinykBohdan/Learning-Python.git
-cd Learning-Python/Mini_Projects/Parking_Lot
-python Parking_Lot.py
+cd Learning-Python/Mini_Projects/02_Todo_App
+python 02_Todo_App.py
 ```
 
 ## Concepts
