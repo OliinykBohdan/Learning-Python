@@ -17,7 +17,7 @@ python 03_Parking_Lot.py
 ```
 
 ## Concepts
-- OOP (classes, objects)
+- OOP (classes and objects)
 - Object interaction
 - Working with lists of objects
 

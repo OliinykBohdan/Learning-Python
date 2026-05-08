@@ -17,7 +17,7 @@ python Library.py
 ```
 
 ## Concepts
-- OOP (classes, objects)
+- OOP (classes and objects)
 - Object interaction
 - Lists of objects
 
