@@ -7,6 +7,8 @@ print('-' * 10, 'Task 1:', sep='\n')
 for i in range(1, 11):
     print(i)
 
+print('Result: done')
+
 # Task 2: Even Numbers (for)
 #
 # Print all even numbers from 1 to 20.
@@ -17,6 +19,7 @@ for i in range(1, 21):
     if i % 2 == 0:
         print(i)
 
+print('Result: done')
 # Task 3: Sum of Even Numbers (for)
 #
 # The user enters a number n.
@@ -32,6 +35,7 @@ for i in range(1, n + 1):
         total += i
 
 print(total)
+print('Result: done')
 
 # Task 4: Numbers from 10 to 1 (while)
 #
@@ -44,6 +48,8 @@ number = 10
 while number > 0:
     print(number)
     number -= 1
+
+print('Result: done')
 
 # Task 5: Password Check (while)
 #
@@ -63,4 +69,3 @@ while password != passw:
     password = input('Password is incorrect, try again: ')
 
 print('Access granted')
-

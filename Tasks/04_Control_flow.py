@@ -10,6 +10,8 @@ for i in range(1, 11):
         break
     print(i)
 
+print('Result: done')
+
 # # Task 2: Skip Number (continue)
 # #
 # # Print numbers from 1 to 10,
@@ -21,6 +23,8 @@ for i in range(1, 11):
     if i == 5:
         continue
     print(i)
+
+print('Result: done')
 
 # Task 3: First Negative Number (break)
 #
@@ -42,6 +46,7 @@ for number in numbers:
         print(number)
         break
 
+print('Result: done')
 
 # # Task 4: Skip Negative Numbers (continue)
 # #
@@ -59,6 +64,8 @@ for number in numbers:
     if number < 0:
         continue
     print(number)
+
+print('Result: done')
 
 # Task 5: Password with Limit (break)
 #
