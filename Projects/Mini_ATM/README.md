@@ -25,7 +25,7 @@ This project demonstrates progression from a basic monolithic version (v1) to a 
 ## How to run
 ```bash
 git clone https://github.com/OliinykBohdan/Learning-Python.git
-cd Learning-Python/Projects/Mini_ATM
+cd Learning-Python/Projects/Mini_ATM/ATM_simple_versions
 python ATM_v1.py or python ATM_v2.py
 ```
 
